@@ -12,7 +12,6 @@ export const useShoppingCart = () => {
     product: Product;
   }) => {
     setShoppingCart((oldShoppingCart) => {
-      console.log({ count });
       // Si el objeto ya existe en el carrito
       if (oldShoppingCart.find((schp) => schp.id === product.id)) {
         // Si existe pero se llego a cantidad 0 lo borramos
